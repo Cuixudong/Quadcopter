@@ -1,12 +1,4 @@
-::PROTELÀ¬»øÎÄ¼şÉ¾³ıÆ÷ 
-::ÕıµãÔ­×ÓÖÆ×÷
-::ÂÛÌ³:www.openedv.com 
-
-::°æ±¾ V1.5  20220324¸üĞÂ
-::1, ĞÂÔöÉ¾³ı.htmÎÄ¼ş
-::2, ĞÂÔöÉ¾³ı.htmlÎÄ¼ş
-
-::°æ±¾ V1.4  20120914¸üĞÂ
+::PROTELåƒåœ¾æ–‡ä»¶åˆ é™¤å™¨ 
 
 del *.SchDocPreview /s
 del *.PcbDocPreview /s 
@@ -18,9 +10,6 @@ del *.OutJob /s
 del *.htm /s
 del *.html /s
 for /r /d %%b in (History) do rd "%%b" /s /q 
-::É¾³ıµ±Ç°Ä¿Â¼ÏÂµÄËùÓĞHistoryÎÄ¼ş¼Ğ
 for /r /d %%b in (Project?Logs?for*) do rd "%%b" /s /q 
-::É¾³ıµ±Ç°Ä¿Â¼ÏÂµÄËùÓĞ´ø×Ö·û´®Project Logs forµÄÎÄ¼ş¼Ğ
-for /r /d %%b in (Project?Outputs?for*) do rd "%%b" /s /q   
-::É¾³ıµ±Ç°Ä¿Â¼ÏÂµÄËùÓĞ´ø×Ö·û´®Project Outputs forµÄÎÄ¼ş¼Ğ
+for /r /d %%b in (Project?Outputs?for*) do rd "%%b" /s /q 
 exit
